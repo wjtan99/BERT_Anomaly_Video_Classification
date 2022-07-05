@@ -2,25 +2,21 @@
 
 ## Datasets
 
-Download UCF-Crime and ShanghaiTech data [link](https://drive.google.com/file/d/18nlV4YjPM93o-SdnPQrvauMN_v-oizmZ/view?usp=sharing) and unzip under your $DATA_ROOT_DIR.
-
+Download UCF-Crime and ShanghaiTech data at following https://github.com/junha-kim/Learning-to-Adapt-to-Unseen-Abnormal-Activities 
 
 ## Checkpoints 
 Download checkpoints at xxx 
 
 
 ## Train 
-```python main.py
-```
+python main.py 
+
 
 ## Test 
-```python main.py --test --pretrain checkpoint --dataset UCF-Crime 
-```
+python main.py --test --pretrained=checkpoint --dataset UCF-Crime 
+
 
 ## To reproduce results on RGB+Flow in the paper 
-
-```python main.py --test --pretrain checkpoint --dataset UCF-Crime 
-```
 
 CUDA_VISIBLE_DEVICES=0 python main.py --train_mode=2 --dataset=UCF-Crime --test --pretrain=ckpt/UCF-Crime/UCF-Crime-RGB+Flow-trainmode-2-divide32-True-L2Norm-1-multiCrop-False-epoch-9-auc-0.8671106209312655-bert.pkl
 

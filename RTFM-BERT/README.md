@@ -2,15 +2,15 @@
 
 ## Datasets
 
-Follow instrunction https://github.com/tianyu0207/RTFM to download UCF-Crime and ShanghaiTech feature sets 
+Follow instrunction https://github.com/tianyu0207/RTFM to download UCF-Crime and ShanghaiTech feature sets
+ 
 Follow https://github.com/Roc-Ng/XDVioDet to download XD-Violence feature sets 
 
 ## Train 
-```python main.py
-```
+python main.py
 
 ## Checkpoints 
-Download at xxx 
+Download checkpoints at xxx 
 
 ## Reproduce results on XD-Violence 
 
