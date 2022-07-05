@@ -1,0 +1,41 @@
+# Power of Video Classification using BERT in Video Anomaly Detection 
+
+## Datasets
+
+Download UCF-Crime and ShanghaiTech data [link](https://drive.google.com/file/d/18nlV4YjPM93o-SdnPQrvauMN_v-oizmZ/view?usp=sharing) and unzip under your $DATA_ROOT_DIR.
+
+
+## Checkpoints 
+Download checkpoints at xxx 
+
+
+## Train 
+```python main.py
+```
+
+## Test 
+```python main.py --test --pretrain checkpoint --dataset UCF-Crime 
+```
+
+## To reproduce results on RGB+Flow in the paper 
+
+```python main.py --test --pretrain checkpoint --dataset UCF-Crime 
+```
+
+CUDA_VISIBLE_DEVICES=0 python main.py --train_mode=2 --dataset=UCF-Crime --test --pretrain=ckpt/UCF-Crime/UCF-Crime-RGB+Flow-trainmode-2-divide32-True-L2Norm-1-multiCrop-False-epoch-9-auc-0.8671106209312655-bert.pkl
+
+Ouput: 
+
+args =  Namespace(L2Norm=0, batch_size=30, dataset='UCF-Crime', divideTo32=False, epochs=75, lr=0.0001, modality='RGB+Flow', multiCrop=False, pretrained='ckpt/UCF-Crime/UCF-Crime-RGB+Flow-trainmode-2-divide32-True-L2Norm-1-multiCrop-False-epoch-9-auc-0.8671106209312655-bert.pkl', resume=False, test=True, train_by_step=False, train_mode=2, workers=4)
+cuda
+key =  UCF-Crime-RGB+Flow-trainmode-2-divide32-True-L2Norm-1-multiCrop-False
+Loading model =  ckpt/UCF-Crime/UCF-Crime-RGB+Flow-trainmode-2-divide32-True-L2Norm-1-multiCrop-False-epoch-9-auc-0.8671106209312655-bert.pkl
+number of parameters =  27358338
+auc = 0.8671106209312655, ap = 0.3199597162947764, auc2 = 0.8234631858560157, ap2 = 0.30293617739110074
+time per frame = 2.818072959694916e-06,  fps_frame =354852.416634472
+
+
+
+
+
+
