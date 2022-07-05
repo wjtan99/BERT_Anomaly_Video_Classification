@@ -10,7 +10,7 @@ Follow https://github.com/Roc-Ng/XDVioDet to download XD-Violence feature sets
 python main.py
 
 ## Checkpoints 
-Download checkpoints at xxx 
+Download checkpoints at https://drive.google.com/drive/folders/1ABD8JZ__hX1Ab9W4L1yKihwykTe9dXbK?usp=sharing 
 
 ## Reproduce results on XD-Violence 
 

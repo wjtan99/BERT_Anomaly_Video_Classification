@@ -5,7 +5,7 @@
 Download UCF-Crime and ShanghaiTech data at following https://github.com/junha-kim/Learning-to-Adapt-to-Unseen-Abnormal-Activities 
 
 ## Checkpoints 
-Download checkpoints at xxx 
+Download checkpoints at https://drive.google.com/drive/folders/1ABD8JZ__hX1Ab9W4L1yKihwykTe9dXbK?usp=sharing 
 
 
 ## Train 
